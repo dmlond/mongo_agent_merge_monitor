@@ -1,4 +1,10 @@
 mongo_agent_merge_monitor
 =========================
 
-extends [dmlond/bwa_samtools_base](https://github.com/dmlond/bwa_samtools_base) with a Ruby script that monitors MongoAgent::Agent alignment_agent tasks in the queue to determine when to create a new merge_bam_agent task.
+This application uses the [MongoAgent](https://github.com/dmlond/mongo_agent)
+api to monitor the subprocesses of alignment_agent tasks to determine
+when they have finished, and the subset_bam files are ready to be merged
+into a single bam file.  It then submits a task targetted to the merge_bam_agent.
+
+See the [mongo_agent_alignment](https://github.com/dmlond/mongo_agent_alignment)
+documentation for more details.
