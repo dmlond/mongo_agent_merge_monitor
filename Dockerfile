@@ -1,7 +1,3 @@
-# use this to build a mongo_agent:candidate
-# then build dmlond/alignment_monitor from mongo_agent_base
-# docker build -t mongo_agent:candidate .
-# docker build -t dmlond/mongo_agent_merge_monitor ../../mongo_agent_base
 FROM dmlond/bwa_samtools_base
 MAINTAINER Darin London <darin.london@duke.edu>
 
