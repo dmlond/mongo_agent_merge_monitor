@@ -12,4 +12,4 @@ ADD merge_monitor.rb /usr/local/bin/merge_monitor.rb
 RUN ["chmod", "777", "/usr/local/bin/merge_monitor.rb"]
 USER bwa_user
 WORKDIR /home/bwa_user
-CMD ["/user/local/bin/merge_monitor.rb"]
+CMD ["/usr/local/bin/merge_monitor.rb"]
